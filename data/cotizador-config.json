@@ -1,0 +1,26 @@
+{
+  "tarifas": {
+    "web": { "modulo": 300, "ajuste": 150 },
+    "app": { "pantalla": 250, "ajuste": 120 },
+    "hardware": { "homologacion": 500, "ajuste": 200 }
+  },
+  "precarga": {
+    "nombreProyecto": "Proyecto Demo WideTech",
+    "webModulosNuevos": 1,
+    "webAjustesActuales": 0,
+    "appPantallasNuevas": 1,
+    "appAjustes": 0,
+    "hardwareHomologaciones": 0,
+    "hardwareAjustes": 0
+  },
+  "campos": [
+    { "id": "webModulosNuevos", "label": "Módulos funcionales nuevos", "seccion": "web" },
+    { "id": "webAjustesActuales", "label": "Ajustes módulos actuales", "seccion": "web" },
+
+    { "id": "appPantallasNuevas", "label": "Pantallas nuevas", "seccion": "app" },
+    { "id": "appAjustes", "label": "Ajustes en app existente", "seccion": "app" },
+
+    { "id": "hardwareHomologaciones", "label": "Homologación de dispositivos", "seccion": "hardware" },
+    { "id": "hardwareAjustes", "label": "Ajustes a dispositivos existentes", "seccion": "hardware" }
+  ]
+}

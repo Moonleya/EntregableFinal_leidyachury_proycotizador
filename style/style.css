@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.navbar {
+  background-color: aliceblue !important;
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0.5rem 1rem;
+  /* Logo */
+  /*.tituloindex {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: v.$colorPrincipal;
+  }*/
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: aliceblue;
+}
+.imglogo {
+  height: 100px;
+  width: 200px;
+  align-items: flex-start;
+  animation: aparecer 1.5s ease-in-out forwards;
+}
+.titulocotizador {
+  color: #466969;
+  font-family: "Raleway";
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+.tituloindex {
+  font-family: "Raleway" !important;
+  color: #13353B;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  font-size: 3rem;
+}
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+footer nav {
+  display: flex;
+  gap: 15px;
+}
+footer nav img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+footer nav img:hover {
+  transform: scale(1.2);
+}
+
+.facebook {
+  width: 50px;
+  height: 50px;
+}
+
+.instagram {
+  width: 50px;
+  height: 50px;
+}
+
+.linkelind {
+  width: 50px;
+  height: 50px;
+}
+
+.youtube {
+  width: 50px;
+  height: 50px;
+}
+
+.whatsapp {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+}
+.titulocontactanos {
+  color: #C4D600;
+  font-family: "Raleway";
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* ===== Reset básico ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Estilos generales ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+}
+
+/* ===== Encabezado ===== */
+.main-header {
+    background-color: #e4f0fb;
+    border-bottom: 1px solid #c9d7e8;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2c7bb3;
+}
+
+.header-title h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ===== Contenido principal ===== */
+.main-content {
+    max-width: 1100px;
+    margin: 20px auto 80px;
+    padding: 20px 25px 60px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 15px 0 8px;
+}
+
+/* ===== Formularios ===== */
+.field-group,
+.field-row {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: 1px solid #c9d7e8;
+}
+
+.actions {
+    margin-top: 15px;
+}
+
+.btn-primary {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #2c7bb3;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1);
+}
+
+/* ===== Resultados ===== */
+.resultados {
+    margin-top: 25px;
+    padding-top: 10px;
+}
+
+.resultado-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+
+.total-general strong {
+    font-size: 1.1rem;
+}
+
+.mensaje-guardado {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #298644;
+}
+
+/* ===== Historial ===== */
+.historial-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.historial-list li {
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+/* ===== Footer ===== */
+.main-footer {
+    background-color: #e4f0fb;
+    border-top: 1px solid #c9d7e8;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

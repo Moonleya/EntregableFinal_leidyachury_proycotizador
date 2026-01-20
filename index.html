@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de Proyectos</title>
+    <link rel="stylesheet" href= "style/style.css" >
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+      </nav>
+    <!-- Logo -->
+    <a class="navbar-brand" href="./index.html">
+      <img src="./assets/widetechlogostandard.png" alt="Logo WideTech" class="imglogo">
+    </a>
+    <!-- Título centrado -->
+    <h1 class="titulocotizador"  > Cotizador de Proyectos de Software y Hardware </h1>
+    </header>
+
+      <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+
+        <!-- FORMULARIO PRINCIPAL -->
+        <section>
+            <h2>Datos del Proyecto</h2>
+            <form id="cotizador-form">
+
+                <div class="field-group">
+                    <label for="nombreProyecto">Nombre del proyecto</label>
+                    <input type="text" id="nombreProyecto" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="fecha">Fecha de cotización</label>
+                    <input type="date" id="fecha" required>
+                </div>
+
+                <hr>
+
+                <h3>Web</h3>
+                <div class="field-row">
+                    <label for="webModulosNuevos">Módulos funcionales nuevos</label>
+                    <input type="number" id="webModulosNuevos" min="0" value="0">
+                </div>
+
+                <div class="field-row">
+                    <label for="webAjustesActuales">Ajustes módulos actuales</label>
+                    <input type="number" id="webAjustesActuales" min="0" value="0">
+                </div>
+
+                <hr>
+
+                <h3>App</h3>
+                <div class="field-row">
+                    <label for="appPantallasNuevas">Pantallas nuevas</label>
+                    <input type="number" id="appPantallasNuevas" min="0" value="0">
+                </div>
+
+                <div class="field-row">
+                    <label for="appAjustes">Ajustes en app existente</label>
+                    <input type="number" id="appAjustes" min="0" value="0">
+                </div>
+
+                <hr>
+
+                <h3>Hardware</h3>
+                <div class="field-row">
+                    <label for="hardwareHomologaciones">Homologación de dispositivos</label>
+                    <input type="number" id="hardwareHomologaciones" min="0" value="0">
+                </div>
+
+                <div class="field-row">
+                    <label for="hardwareAjustes">Ajustes a dispositivos existentes</label>
+                    <input type="number" id="hardwareAjustes" min="0" value="0">
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn-primary">Pedir presupuesto</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- RESULTADOS EN EL DOM -->
+        <section class="resultados">
+            <h2>Resultado de la cotización</h2>
+
+            <div class="resultado-row">
+                <span>Total Web:</span>
+                <strong id="totalWeb">$ 0</strong>
+            </div>
+            <div class="resultado-row">
+                <span>Total App:</span>
+                <strong id="totalApp">$ 0</strong>
+            </div>
+            <div class="resultado-row">
+                <span>Total Hardware:</span>
+                <strong id="totalHardware">$ 0</strong>
+            </div>
+
+            <hr>
+
+            <div class="resultado-row total-general">
+                <span>Costo total estimado del proyecto:</span>
+                <strong id="totalProyecto">$ 0</strong>
+            </div>
+
+            <p id="mensajeGuardado" class="mensaje-guardado"></p>
+        </section>
+
+        <!-- HISTORIAL DESDE LOCALSTORAGE -->
+        <section>
+            <h2>Historial de cotizaciones guardadas</h2>
+            <ul id="historial-list" class="historial-list">
+                <!-- Aquí se agregan <li> dinámicamente con JS -->
+            </ul>
+        </section>
+
+    </main>
+
+
+   <footer>
+      <h2 class="titulocontactanos">Derechos Reservados Leidy Achury </h2>
+        <nav>
+           <a href="https://www.facebook.com/Widetech.co/?locale=es_LA" target="_blank">
+                <img src="./assets/facebook.png" alt="Enlace a facebook" title="facebook" class="facebook">
+            </a>
+             <a href="https://co.linkedin.com/company/widetechgroup" target="_blank">
+                <img src="./assets/linkelind.png" alt="Enlace a linkelind" title="linkelind" class="linkelind">
+            </a>
+             <a href="https://www.youtube.com/@widetechgroup" target="_blank">
+                <img src="./assets/youtube.png" alt="Enlace a youtube" title="youtube" class="youtube">
+            </a>
+            <a href="https://www.instagram.com/widetechgroup/?hl=es" target="_blank">
+                <img src="./assets/instagram.png" alt="Enlace a instagram" title="instagram" class="instagram">
+            </a>
+             <a href="https://web.whatsapp.com" target="_blank">
+                <img src="./assets/whatsapp.png" alt="Enlace a Whastapp" title="Whastapp" class="whatsapp">
+            </a>
+            <br>
+            <br>
+            <br>
+        </nav>
+   </footer>
+   <!-- SweetAlert2 (reemplaza alert / confirm) -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- Notificaciones bonitas -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- la lógica -->
+   <script src="script.js"></script>
+</body>
+</html>
